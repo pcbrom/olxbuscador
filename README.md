@@ -1,2 +1,2 @@
 # olxbuscador
-Script para coleta de dados de anúncios na OLX. 
+Script para coleta de dados dos anúncios na OLX. 
