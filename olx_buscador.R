@@ -1,4 +1,5 @@
-library(tidyverse)
+library(stringr)
+library(dplyr)
 library(doSNOW)
 library(rvest)
 
@@ -16,7 +17,7 @@ N <- URL %>%
   max()
 
 # criando urls
-URL <- paste0("https://df.olx.com.br/computadores-e-acessorios/notebook-e-netbook?o=", 1:N, "&ssf=1")
+URL <- paste0(URL, "?o=", 1:N, "&ssf=1")
 
 
 # coletando todos os links ----------------------------------------------------
